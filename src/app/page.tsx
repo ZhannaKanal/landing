@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import LogoList from "./components/LogoList";
 import Track from "./components/Track";
+import Monitor from "./components/Monitor";
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
       </div>
       <LogoList></LogoList>
       <Track></Track>
+      <Monitor></Monitor>
     </>
   );
 }
