@@ -1,6 +1,4 @@
-
-
-export default function HomePage(){
+export default function Logolist(){
   return (
     <div>
       Hi

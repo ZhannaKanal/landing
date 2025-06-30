@@ -1,6 +1,4 @@
-
-
-export default function HomePage(){
+export default function Monitor(){
   return (
     <div>
       Hi

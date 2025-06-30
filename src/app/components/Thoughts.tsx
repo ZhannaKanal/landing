@@ -1,6 +1,4 @@
-
-
-export default function HomePage(){
+export default function Thoughts(){
   return (
     <div>
       Hi
