@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Plans() {
   return (
-    <div className="max-w-[1130px] w-full mx-auto flex justify-start items-center gap-[100px] ">
-      <div className="">
+    <div className="max-w-[1100px] w-full mx-auto flex justify-start items-center gap-[100px] my-[50px]">
+      <div className="px-[50px]">
         <p className="text-[32px] font-bold leading-9">
           Group Expenses? No Worries, <br /> Split with Ease
         </p>
