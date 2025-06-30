@@ -1,6 +1,8 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
+import LogoList from "./components/LogoList";
+
 
 export default function HomePage() {
   return (
@@ -9,14 +11,10 @@ export default function HomePage() {
         <Header></Header>
         <HeroSection></HeroSection>
       </div>
-      {/* <Footer></Footer> */}
+      <LogoList></LogoList>
 
-      {/* <Footer></Footer> */}
+
     </>
   );
 }
 
-{
-  /* <div className="absolute z-[-1] bg-[url('/images/i1.avif')] bg-cover bg-center h-[500px]"></div> */
-}
-// I have two components and this components should have bg image, how to set
