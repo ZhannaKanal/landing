@@ -6,6 +6,7 @@ import Track from "./components/Track";
 import Monitor from "./components/Monitor";
 import Plans from "./components/Plans";
 import Download from "./components/Download";
+import Thoughts from "./components/Thoughts";
 
 export default function HomePage() {
   return (
@@ -19,6 +20,7 @@ export default function HomePage() {
       <Monitor></Monitor>
       <Plans></Plans>
       <Download></Download>
+      <Thoughts></Thoughts>
     </>
   );
 }

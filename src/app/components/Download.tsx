@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Download() {
   return (
-    <div className="max-w-[1100px] w-full mx-auto bg-[black] rounded-[25px] flex justify-between items-center bg-[url('/images/d2.avif')] bg-cover bg-center">
+    <div className="max-w-[1100px] w-full mx-auto bg-[black] rounded-[25px] flex justify-between items-center bg-[url('/images/d2.avif')] bg-cover bg-center my-[90px]">
       <div className="px-[80px]">
         <p className="text-[white] text-[46px] font-medium leading-14">
           Download the app <br />
