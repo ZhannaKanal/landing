@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <div>
-      <div className=" bg-[#00000033] py-[100px] w-full text-center mx-auto text-[white]">
+      <div className="py-[100px] w-full text-center mx-auto text-[white]">
         <div className="text-[46px] font-bold">
           Simplify Your <br /> Financial Life, Today!
         </div>
@@ -26,7 +26,7 @@ export default function HeroSection() {
           </a>
         </div>
       </div>
-      <div className="bg-[#00000033]">
+      <div className="">
         <div className="relative max-w-[1280px] w-full mx-auto">
           <div className="absolute z-10 bg-[#fff] max-w-[250px] w-full rounded-[16px] top-[-12px] right-8">
             <div className="p-6">
