@@ -17,13 +17,13 @@ export default function HomePage() {
         <HeroSection></HeroSection>
       </div>
       <LogoList></LogoList>
-      {/* <Track></Track>
-      <Monitor></Monitor>
-      <Plans></Plans>
-      <Download></Download>
-      <Thoughts></Thoughts>
-      <Split></Split>
-      <Footer></Footer> */}
+      <Track></Track>
+      {/* <Monitor></Monitor>
+       <Plans></Plans>
+       <Download></Download>
+       <Thoughts></Thoughts>
+       <Split></Split>
+       <Footer></Footer> */}
     </>
   );
 }
