@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Split() {
   return (
-    <div className="pt-[60px]">
+    <div className="py-[60px]">
       <div className="my-[60px] text-center">
         <p className="text-[#262c3b] text-[46px] font-bold">
           Ready to get started?
