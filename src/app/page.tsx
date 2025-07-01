@@ -18,8 +18,8 @@ export default function HomePage() {
       </div>
       <LogoList></LogoList>
       <Track></Track>
-      {/* <Monitor></Monitor>
-       <Plans></Plans>
+      <Monitor></Monitor>
+       {/* <Plans></Plans>
        <Download></Download>
        <Thoughts></Thoughts>
        <Split></Split>
