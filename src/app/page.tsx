@@ -8,22 +8,25 @@ import Plans from "./components/Plans";
 import Download from "./components/Download";
 import Thoughts from "./components/Thoughts";
 import Split from "./components/Split";
+import HeaderHero from "./components/HeaderHero";
+
 
 export default function HomePage() {
   return (
     <>
-      <div className="relative z-[-1] bg-[url('/images/i1.avif')] bg-cover bg-center h-[vh]">
+      {/* <div className="relative z-[-1] bg-[url('/images/i1.avif')] bg-cover bg-center h-[vh]">
         <Header></Header>
         <HeroSection></HeroSection>
-      </div>
+      </div> */}
+      <HeaderHero></HeaderHero>
       <LogoList></LogoList>
       <Track></Track>
       <Monitor></Monitor>
-       <Plans></Plans>
-       <Download></Download>
-       <Thoughts></Thoughts>
-       <Split></Split>
-       <Footer></Footer>
+      <Plans></Plans>
+      <Download></Download>
+      <Thoughts></Thoughts>
+      <Split></Split>
+      <Footer></Footer>
     </>
   );
 }

@@ -1,18 +1,82 @@
-import Image from "next/image";
+'use client'
 
-export default function HeroSection() {
+
+import Image from "next/image";
+import { useState } from "react";
+
+export default function HeaderHero() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div>
+    <div className="bg-[url('/images/i1.avif')] bg-center bg-cover">
+      <div className="py-[16px] px-[24px] relative">
+        <div className="max-w-[1462px] w-full mx-auto flex items-center justify-between">
+          <div className="bg-[linear-gradient(to_right,#ffffff,#ffffff,#ffff00,#b4a7d6,#7BCAEF,#7CFFCB,#ffffff)] bg-clip-text text-transparent font-bold text-[32px]">
+            vibrant.
+          </div>
+
+          <div className="max-w-[350px] w-full hidden justify-between items-center text-[#ffffff] md:flex">
+            <div>
+              <a href="">Home</a>
+            </div>
+            <div>
+              <a href="">FAQ</a>
+            </div>
+            <div>
+              <a href="">Blog</a>
+            </div>
+            <div className="rounded-[12px] font-medium bg-[white] hover:bg-[black] duration-500 text-[black] hover:text-[white] px-[20px] py-[8px]">
+              <a href="/">Get for Free</a>
+            </div>
+          </div>
+
+          <div
+            onClick={() => setIsOpen(!isOpen)}
+            className="block md:hidden cursor-pointer"
+          >
+            <Image src="/icons/i0.svg" alt="menu" width={32} height={32} />
+          </div>
+        </div>
+
+        {isOpen && (
+          <div className="absolute top-0 left-0 w-full bg-[#000] pt-4 px-6">
+            <div className="flex justify-between items-center">
+              <div className="bg-[linear-gradient(to_right,#ffffff,#ffffff,#ffff00,#b4a7d6,#7BCAEF,#7CFFCB,#ffffff)] bg-clip-text text-transparent font-bold text-[32px] ">
+                vibrant.
+              </div>
+              <div onClick={() => setIsOpen(false)} className="cursor-pointer">
+                <Image
+                  src="/icons/i01.svg"
+                  alt="close"
+                  width={32}
+                  height={32}
+                />
+              </div>
+            </div>
+            <div className=" flex flex-col items-center text-white py-6 gap-4 md:hidden z-50">
+              <a href="">Home</a>
+              <a href="">FAQ</a>
+              <a href="">Blog</a>
+              <a
+                href="/"
+                className="w-full  text-center rounded-[12px] font-medium bg-[white] hover:bg-[black] duration-500 text-[black] hover:text-[white]  py-[8px]"
+              >
+                Get for Free
+              </a>
+            </div>
+          </div>
+        )}
+      </div>
       <div className="py-[100px] w-full text-center mx-auto text-[white] p-10">
         <div className="text-[29px] md:text-[46px] font-bold">
           Simplify Your <br /> Financial Life, Today!
         </div>
         <div className="text-[18px] w-full md:max-w-[555px] mx-auto px-6 md:px-0">
-          Manage your finances effortlessly with our intuitive platform. 
-          Track your balance, monitor income, and control your expenses 
-          all in one place.
+          Manage your finances effortlessly with our intuitive platform. Track
+          your balance, monitor income, and control your expenses all in one
+          place.
         </div>
-        
+
         <div className="max-w-[150px] w-full mx-auto bg-[#965CFF] hover:bg-[#6B33CC] duration-1000 rounded-[12px] py-[9px] px-[15px] mt-[15px]">
           <a href="/">
             <div className="flex justify-between ">
