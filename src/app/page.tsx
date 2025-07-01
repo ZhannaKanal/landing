@@ -21,8 +21,8 @@ export default function HomePage() {
       <Monitor></Monitor>
        <Plans></Plans>
        <Download></Download>
-       {/* <Thoughts></Thoughts>
-       <Split></Split>
+       <Thoughts></Thoughts>
+       {/* <Split></Split>
        <Footer></Footer> */}
     </>
   );
