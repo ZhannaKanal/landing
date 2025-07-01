@@ -32,24 +32,25 @@ export default function Footer() {
   return (
     <div className="bg-[black] p-[100px]">
       <div className="max-w-[1100px] w-full mx-auto">
-        <div className="flex justify-between">
-          <div className="bg-[] w-1/2">
-            <div>
-              <div className="max-w-[120px] bg-[linear-gradient(to_right,#ffffff,#ffff4e,#b4a7d6,#7BCAEF,#7CFFCB,#ffffff)] bg-clip-text text-transparent font-bold text-[32px]">
+        <div className=" md:flex justify-between">
+          <div className="bg-[] w-full md:w-1/2">
+            <div className="">
+              <div className="max-w-[120px] bg-[linear-gradient(to_right,#ffffff,#ffff4e,#b4a7d6,#7BCAEF,#7CFFCB,#ffffff)] bg-clip-text text-transparent font-bold text-[32px] mx-auto md:mx-0">
                 vibrant.
               </div>
-              <p className="text-[white] py-3">
+
+              <p className="text-[white] py-3 text-center md:text-start">
                 Vibrant is your ultimate financial companion.
               </p>
             </div>
             <form
-              className="flex justify-start gap-3 py-7"
+              className=" md:flex justify-start gap-3 py-7"
               onSubmit={(e) => {
                 e.preventDefault(); // Prevent actual form submit/refresh
                 handleSubscribe();
               }}
             >
-              <div className="p-4 rounded-[12px] bg-[#252525] text-[#929292] w-1/2">
+              <div className="p-4 mb-2 md:mb-0 rounded-[12px] bg-[#252525] text-[#929292] w-full  md:max-w-[310px]">
                 <input
                   type="email"
                   placeholder="Your e-mail address"
@@ -61,13 +62,13 @@ export default function Footer() {
 
               <button
                 type="submit"
-                className="p-4 rounded-[12px] text-white bg-[#965CFF] hover:bg-[#6B33CC] font-bold w-1/5"
+                className="p-4 rounded-[12px] text-white bg-[#965CFF] hover:bg-[#6B33CC] font-bold w-full md:w-auto"
               >
                 Subscribe
               </button>
             </form>
           </div>
-          <div className="w-1/2 flex justify-end text-[#ffffff] text-[17px] pt-[5px] gap-8">
+          <div className="w-full md:w-1/2 flex justify-center md:justify-end text-[#ffffff] text-[17px] pt-[5px] gap-8">
             <div>
               <a href="">Home</a>
             </div>
@@ -80,7 +81,7 @@ export default function Footer() {
           </div>
         </div>
         <hr className="h-[1px] bg-[#252525] border-0 mt-7" />
-        <div className="flex justify-start gap-1 text-[13px] mt-4">
+        <div className="flex justify-center md:justify-start  gap-1 text-[13px] mt-4 ">
           <p className="text-[white]">Made by</p>
           <p className="text-[#985cff]">Code-Less.cc</p>
         </div>

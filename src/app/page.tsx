@@ -23,7 +23,7 @@ export default function HomePage() {
        <Download></Download>
        <Thoughts></Thoughts>
        <Split></Split>
-       {/* <Footer></Footer> */}
+       <Footer></Footer>
     </>
   );
 }
