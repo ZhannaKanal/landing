@@ -20,8 +20,8 @@ export default function HomePage() {
       <Track></Track>
       <Monitor></Monitor>
        <Plans></Plans>
-       {/* <Download></Download>
-       <Thoughts></Thoughts>
+       <Download></Download>
+       {/* <Thoughts></Thoughts>
        <Split></Split>
        <Footer></Footer> */}
     </>
