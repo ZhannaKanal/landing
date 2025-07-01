@@ -43,7 +43,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="py-[16px] px-[24px] relative">
