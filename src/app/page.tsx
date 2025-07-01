@@ -7,6 +7,7 @@ import Monitor from "./components/Monitor";
 import Plans from "./components/Plans";
 import Download from "./components/Download";
 import Thoughts from "./components/Thoughts";
+import Split from "./components/Split";
 
 export default function HomePage() {
   return (
@@ -21,6 +22,7 @@ export default function HomePage() {
       <Plans></Plans>
       <Download></Download>
       <Thoughts></Thoughts>
+      <Split></Split>
     </>
   );
 }

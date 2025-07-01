@@ -58,7 +58,7 @@ export default function Thoughts() {
     },
   ];
   return (
-    <div className="pt-[90px]">
+    <div className="pt-[90px] mt-[60px]">
       <div className="mb-[100px] text-[46px] text-[#262c3b] font-bold text-center">
         What people say
       </div>
@@ -66,7 +66,7 @@ export default function Thoughts() {
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className="max-w-[356px] w-full bg-[white] rounded-[14px] p-[30px] shadow-lg "
+            className="max-w-[356px] w-full bg-[white] rounded-[14px] p-[30px] shadow-[0_0_20px_rgba(0,0,0,0.1)] "
           >
             <div className="flex justify-start gap-3 mb-4">
               <Image
