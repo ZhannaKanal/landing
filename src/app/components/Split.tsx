@@ -2,20 +2,20 @@ import Image from "next/image";
 
 export default function Split() {
   return (
-    <div className="py-[60px]">
+    <div className="lg:py-[60px] px-2 md:px-0">
       <div className="my-[60px] text-center">
-        <p className="text-[#262c3b] text-[46px] font-bold">
+        <p className="text-[#262c3b] text-[38px] md:text-[42px] lg:text-[46px] font-bold">
           Ready to get started?
         </p>
         <p className="text-[#252c3b] text-[20px] pt-[20px]">
           Choose a plan fits to your needs.
         </p>
       </div>
-      <div className="max-w-[900px] w-full mx-auto flex justify-between">
-        <div className="max-w-[410px] max-h-[530px] w-full rounded-[24px] shadow-[0_0_20px_rgba(0,0,0,0.1)] p-[50px]">
+      <div className="max-w-[900px] w-full mx-auto md:flex justify-between gap-4 px-3 lg:px-0">
+        <div className="md:max-w-[410px] max-h-[530px] w-full rounded-[24px] shadow-[0_0_20px_rgba(0,0,0,0.1)] p-[35px] lg:p-[50px] mb-2">
           <p className="text-[30px] font-bold">Personal</p>
           <p className="text-[18px] py-3 text-[#252b3b]">
-            Best for individuals managing <br /> personal finances.
+            Best for individuals managing personal finances.
           </p>
           <div className="flex gap-4 py-2 items-end">
             <p className="text-[50px] text-[#262c3b]">$2.99</p>
@@ -57,7 +57,7 @@ export default function Split() {
             </div>
           </div>
         </div>
-        <div className="max-w-[470px] w-full rounded-[24px] p-[50px] bg-[url('/images/s1.avif')] bg-cover bg-center text-[white]">
+        <div className="md:max-w-[470px] w-full rounded-[24px] p-[35px] lg:p-[50px] bg-[url('/images/s1.avif')] bg-cover bg-center text-[white]">
           <div className="">
             <p className="text-[30px] font-bold">Business</p>
             <p className="text-[18px] py-3 text-[#ffffff80]">
