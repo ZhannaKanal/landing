@@ -4,14 +4,15 @@ export default function HeroSection() {
   return (
     <div>
       <div className="py-[100px] w-full text-center mx-auto text-[white]">
-        <div className="text-[46px] font-bold">
+        <div className="text-[29px] md:text-[46px] font-bold">
           Simplify Your <br /> Financial Life, Today!
         </div>
-        <div className="text-[18px]">
-          Manage your finances effortlessly with our intuitive platform. <br />{" "}
-          Track your balance, monitor income, and control your expenses <br />{" "}
+        <div className="text-[18px] w-full md:max-w-[555px] mx-auto px-6 md:px-0">
+          Manage your finances effortlessly with our intuitive platform. 
+          Track your balance, monitor income, and control your expenses 
           all in one place.
         </div>
+        
         <div className="max-w-[150px] w-full mx-auto bg-[#965CFF] hover:bg-[#6B33CC] duration-1000 rounded-[12px] py-[9px] px-[15px] mt-[15px]">
           <a href="/">
             <div className="flex justify-between ">
@@ -27,8 +28,8 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="">
-        <div className="relative max-w-[1280px] w-full mx-auto">
-          <div className="absolute z-10 bg-[#fff] max-w-[250px] w-full rounded-[16px] top-[-12px] right-8">
+        <div className="relative max-w-[1280px] w-full mx-auto flex justify-end md:justify-between">
+          <div className="absolute z-10 bg-[#fff] max-w-[250px] w-full rounded-[16px] top-[-12px] right-8 hidden lg:block">
             <div className="p-6">
               <p className="text-[12px]">Savings</p>
               <p className="text-[20px] font-bold">$2,380.00</p>
@@ -39,14 +40,14 @@ export default function HeroSection() {
             </div>
           </div>
           <Image
-            className="mx-auto"
+            className="md:mx-auto  max-w-[736px] md:w-full lg:max-w-[1050px] bg-cover w-[550px]"
             src="/images/i2.avif"
             alt="Photo"
             width={1050}
             height={480}
           ></Image>
 
-          <div className="absolute z-10 bg-[#fff] max-w-[280px] w-full rounded-[16px] bottom-[52px]">
+          <div className="absolute z-10 bg-[#fff] max-w-[280px] w-full rounded-[16px] bottom-[52px] hidden lg:block">
             <div className="p-5">
               <div className="flex justify-between">
                 <p className="text-[12px]">Split bills</p>

@@ -16,14 +16,14 @@ export default function HomePage() {
         <Header></Header>
         <HeroSection></HeroSection>
       </div>
-      <LogoList></LogoList>
+      {/* <LogoList></LogoList>
       <Track></Track>
       <Monitor></Monitor>
       <Plans></Plans>
       <Download></Download>
       <Thoughts></Thoughts>
       <Split></Split>
-      <Footer></Footer>
+      <Footer></Footer> */}
     </>
   );
 }
