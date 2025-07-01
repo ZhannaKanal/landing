@@ -16,8 +16,8 @@ export default function HomePage() {
         <Header></Header>
         <HeroSection></HeroSection>
       </div>
-      {/* <LogoList></LogoList>
-      <Track></Track>
+      <LogoList></LogoList>
+      {/* <Track></Track>
       <Monitor></Monitor>
       <Plans></Plans>
       <Download></Download>
