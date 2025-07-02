@@ -1,26 +1,26 @@
 import Footer from "./components/Footer";
-import LogoList from "./components/LogoList";
-import Track from "./components/Track";
-import Monitor from "./components/Monitor";
-import Plans from "./components/Plans";
-import Download from "./components/Download";
-import Thoughts from "./components/Thoughts";
-import Split from "./components/Split";
 import HeaderHero from "./components/HeaderHero";
-
+import dynamic from 'next/dynamic';
+const LogoList = dynamic(() => import('./components/LogoList'));
+const Track = dynamic(() => import('./components/Track'));
+const Monitor = dynamic(() => import('./components/Monitor'));
+const Plans = dynamic(() => import('./components/Plans'));
+const Download = dynamic(() => import('./components/Download'));
+const Thoughts = dynamic(() => import('./components/Thoughts'));
+const Split = dynamic(() => import('./components/Split'));
 
 export default function HomePage() {
   return (
     <>
-      <HeaderHero></HeaderHero>
-      <LogoList></LogoList>
-      <Track></Track>
-      <Monitor></Monitor>
-      <Plans></Plans>
-      <Download></Download>
-      <Thoughts></Thoughts>
-      <Split></Split>
-      <Footer></Footer>
+      <HeaderHero />
+      <LogoList />
+      <Track/>
+      <Monitor/>
+      <Plans/>
+      <Download/>
+      <Thoughts/>
+      <Split/>
+      <Footer/>
     </>
   );
 }
