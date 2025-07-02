@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Download() {
   return (
@@ -9,7 +10,7 @@ export default function Download() {
             Download the app and start today!
           </p>
           <div className="max-w-[150px] mx-auto md:mx-0 w-full bg-[#965CFF] hover:bg-[#6B33CC] duration-1000 rounded-[12px] py-[9px] px-[15px] mt-[15px]">
-            <a href="/">
+            <Link href="/">
               <div className="flex justify-between text-[white]">
                 <p>Get for Free</p>
                 <Image
@@ -19,7 +20,7 @@ export default function Download() {
                   height={10}
                 ></Image>
               </div>
-            </a>
+            </Link>
           </div>
           <p className="text-[grey] text-[12px] py-3 text-center md:text-start">
             *No credit card requires

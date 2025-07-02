@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -25,7 +26,7 @@ export default function Footer() {
         alert("Failed to send email. Please try again.");
       }
     } catch (error) {
-      alert("An error occurred while sending email.");
+      alert("An error occurred while sending email. "+ error);
     }
   };
 
@@ -46,7 +47,7 @@ export default function Footer() {
             <form
               className=" md:flex justify-start gap-3 py-7"
               onSubmit={(e) => {
-                e.preventDefault(); // Prevent actual form submit/refresh
+                e.preventDefault(); 
                 handleSubscribe();
               }}
             >
@@ -70,13 +71,13 @@ export default function Footer() {
           </div>
           <div className="w-full md:w-1/2 flex justify-center md:justify-end text-[#ffffff] text-[17px] pt-[5px] gap-8">
             <div>
-              <a href="">Home</a>
+              <Link href="">Home</Link>
             </div>
             <div>
-              <a href="">FAQ</a>
+              <Link href="">FAQ</Link>
             </div>
             <div>
-              <a href="">Blog</a>
+              <Link href="">Blog</Link>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Split() {
   return (
@@ -22,7 +23,7 @@ export default function Split() {
             <p className="text-[24px] text-[#262c3b80] pb-2">/mo</p>
           </div>
           <div className="w-full bg-[#965CFF] hover:bg-[#000] duration-1000 rounded-[12px] py-[9px] px-[15px] mt-[15px] text-[white] text-[17px] text-center font-bold">
-            <a href="/">Try for Free</a>
+            <Link href="/">Try for Free</Link>
           </div>
           <div className="text-[252b2b] pt-4">
             <div className="flex justify-start gap-3 mt-[20px]">
@@ -69,7 +70,7 @@ export default function Split() {
             <p className="text-[24px] text-[#ffffff80] pb-2">/mo</p>
           </div>
           <div className="w-full bg-[#fff] hover:bg-[#965CFF] hover:text-[white] duration-1000 rounded-[12px] py-[9px] px-[15px] mt-[15px] text-[black] text-[17px] text-center font-bold">
-            <a href="/">Try for Free</a>
+            <Link href="/">Try for Free</Link>
           </div>
           <div className="pt-4 text-[white]">
             <div className="flex justify-start gap-3 mt-[20px]">

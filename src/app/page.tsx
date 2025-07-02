@@ -1,6 +1,4 @@
 import Footer from "./components/Footer";
-import Header from "./components/Header";
-import HeroSection from "./components/HeroSection";
 import LogoList from "./components/LogoList";
 import Track from "./components/Track";
 import Monitor from "./components/Monitor";
