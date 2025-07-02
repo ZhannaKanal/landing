@@ -45,7 +45,7 @@ export default function HeaderHero() {
             onClick={() => setIsOpen(!isOpen)}
             className="block md:hidden cursor-pointer"
           >
-            <Image src="/icons/i0.svg" alt="menu" width={32} height={32} />
+            <Image src="/icons/i0.svg" alt="menu" width={32} height={32} priority/>
           </div>
         </div>
 
@@ -71,6 +71,7 @@ export default function HeaderHero() {
                     alt="close"
                     width={32}
                     height={32}
+                    priority
                   />
                 </div>
               </div>
@@ -124,7 +125,7 @@ export default function HeaderHero() {
           <Link href="/">
             <div className="flex justify-between ">
               <p>Get for Free</p>
-              <Image src="/icons/i1.svg" alt="Arrow" width={25} height={10} />
+              <Image src="/icons/i1.svg" alt="Arrow" width={25} height={10} priority/>
             </div>
           </Link>
         </motion.div>
@@ -161,6 +162,7 @@ export default function HeaderHero() {
               alt="Photo"
               width={1050}
               height={480}
+              priority
             />
           </motion.div>
 
@@ -181,6 +183,7 @@ export default function HeaderHero() {
                     alt="Photo"
                     width={30}
                     height={30}
+                    priority
                   />
                   <Image
                     className="rounded-[50px] mr-[-15px]"
@@ -188,6 +191,7 @@ export default function HeaderHero() {
                     alt="Photo"
                     width={30}
                     height={30}
+                    priority
                   />
                   <Image
                     className="rounded-[50px]"
@@ -195,6 +199,7 @@ export default function HeaderHero() {
                     alt="Photo"
                     width={30}
                     height={30}
+                    priority
                   />
                 </div>
               </div>

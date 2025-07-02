@@ -29,13 +29,13 @@ export default function Thoughts() {
     {
       name: "Jane Smith",
       title: "Marketing Manager",
-      image: "/icons/i2.png",
+      image: "/icons/i3.png",
       text: "I love how easy it is to use and how it helps me stay on top of my budget. A must-have for anyone serious about saving money.",
     },
     {
       name: "Mike Johnson",
       title: "Software Engineer",
-      image: "/icons/i2.png",
+      image: "/icons/i4.png",
       text: "Finally an app that makes financial planning simple and stress-free. It has completely changed how I handle my expenses.",
     },
     {
@@ -47,13 +47,13 @@ export default function Thoughts() {
     {
       name: "Jane Smith",
       title: "Marketing Manager",
-      image: "/icons/i2.png",
+      image: "/icons/i3.png",
       text: "I love how easy it is to use and how it helps me stay on top of my budget. A must-have for anyone serious about saving money.",
     },
     {
       name: "Mike Johnson",
       title: "Software Engineer",
-      image: "/icons/i2.png",
+      image: "/icons/i4.png",
       text: "Finally an app that makes financial planning simple and stress-free. It has completely changed how I handle my expenses.",
     },
   ];
@@ -75,6 +75,7 @@ export default function Thoughts() {
                 alt={testimonial.name}
                 width={44}
                 height={44}
+                priority
               />
               <div>
                 <p className="font-bold">{testimonial.name}</p>

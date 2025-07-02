@@ -18,6 +18,7 @@ export default function Download() {
                   alt="Arrow"
                   width={25}
                   height={10}
+                  priority
                 ></Image>
               </div>
             </Link>
@@ -33,6 +34,7 @@ export default function Download() {
             alt=""
             width={520}
             height={352}
+            priority
           ></Image>
         </div>
       </div>

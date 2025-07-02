@@ -12,7 +12,7 @@ export default function Plans() {
         </p>
       </div>
       <div className="px-7 md:px-0">
-        <Image src="/images/p1.avif" alt="" width={500} height={393}></Image>
+        <Image src="/images/p1.avif" alt="" width={500} height={393} priority></Image>
       </div>
     </div>
   );

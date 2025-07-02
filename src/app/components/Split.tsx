@@ -33,6 +33,7 @@ export default function Split() {
                 alt=""
                 width={23}
                 height={23}
+                priority
               ></Image>
               <p>Track unlimited transactions</p>
             </div>
@@ -43,6 +44,7 @@ export default function Split() {
                 alt=""
                 width={23}
                 height={23}
+                priority
               ></Image>
               <p>Customizable budget categories</p>
             </div>
@@ -53,6 +55,7 @@ export default function Split() {
                 alt=""
                 width={23}
                 height={23}
+                priority
               ></Image>
               <p>Basic analytics and insights</p>
             </div>
@@ -80,6 +83,7 @@ export default function Split() {
                 alt=""
                 width={23}
                 height={23}
+                priority
               ></Image>
               <p>Track unlimited transactions</p>
             </div>
@@ -90,6 +94,7 @@ export default function Split() {
                 alt=""
                 width={23}
                 height={23}
+                priority
               ></Image>
               <p>Advanced reporting and analytics</p>
             </div>
@@ -100,6 +105,7 @@ export default function Split() {
                 alt=""
                 width={23}
                 height={23}
+                priority
               ></Image>
               <p>Invoicing and expense management</p>
             </div>
@@ -112,6 +118,7 @@ export default function Split() {
                 alt=""
                 width={23}
                 height={23}
+                priority
               ></Image>
               <p>Priority customer support</p>
             </div>
@@ -122,6 +129,7 @@ export default function Split() {
                 alt=""
                 width={23}
                 height={23}
+                priority
               ></Image>
               <p>Team collaboration features</p>
             </div>
@@ -132,6 +140,7 @@ export default function Split() {
                 alt=""
                 width={23}
                 height={23}
+                priority
               ></Image>
               <p>Sync across multiple devices</p>
             </div>
