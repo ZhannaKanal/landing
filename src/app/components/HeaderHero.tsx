@@ -45,7 +45,13 @@ export default function HeaderHero() {
             onClick={() => setIsOpen(!isOpen)}
             className="block md:hidden cursor-pointer"
           >
-            <Image src="/icons/i0.svg" alt="menu" width={32} height={32} priority/>
+            <Image
+              src="/icons/i0.svg"
+              alt="menu"
+              width={32}
+              height={32}
+              priority
+            />
           </div>
         </div>
 
@@ -125,7 +131,13 @@ export default function HeaderHero() {
           <Link href="#download">
             <div className="flex justify-between ">
               <p>Get for Free</p>
-              <Image src="/icons/i1.svg" alt="Arrow" width={25} height={10} priority/>
+              <Image
+                src="/icons/i1.svg"
+                alt="Arrow"
+                width={25}
+                height={10}
+                priority
+              />
             </div>
           </Link>
         </motion.div>
@@ -151,7 +163,7 @@ export default function HeaderHero() {
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 120 }}
-            whileInView={{ opacity: 1, y:0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
             className="md:mx-auto"

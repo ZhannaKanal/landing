@@ -12,7 +12,7 @@ if (!fs.existsSync(outputFolder)) {
 
 const files = fs.readdirSync(inputFolder);
 
-files.forEach(file => {
+files.forEach((file) => {
   const ext = path.extname(file).toLowerCase();
   console.log(`Checking: ${file} (${ext})`);
 
@@ -22,6 +22,6 @@ files.forEach(file => {
       .jpeg({ quality: 80 }) // convert to JPEG with 80% quality
       .toFile(path.join(outputFolder, file))
       .then(() => console.log(`✅ Optimized: ${file}`))
-      .catch(err => console.error(`❌ Error with ${file}:`, err));
+      .catch((err) => console.error(`❌ Error with ${file}:`, err));
   }
 });

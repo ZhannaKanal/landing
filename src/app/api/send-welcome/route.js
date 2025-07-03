@@ -7,7 +7,7 @@ export async function POST(req) {
     service: "gmail",
     auth: {
       user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS, 
+      pass: process.env.EMAIL_PASS,
     },
   });
 
@@ -19,9 +19,13 @@ export async function POST(req) {
       text: "Hi, welcome to our site",
     });
 
-    return new Response(JSON.stringify({ message: "Email sent" }), { status: 200 });
+    return new Response(JSON.stringify({ message: "Email sent" }), {
+      status: 200,
+    });
   } catch (error) {
     console.error(error);
-    return new Response(JSON.stringify({ message: "Error sending email" }), { status: 500 });
+    return new Response(JSON.stringify({ message: "Error sending email" }), {
+      status: 500,
+    });
   }
 }

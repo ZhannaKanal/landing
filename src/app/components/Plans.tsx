@@ -8,11 +8,18 @@ export default function Plans() {
           Group Expenses? No Worries, Split with Ease
         </p>
         <p className="text-[#252b3b] leading-7 pt-5">
-          Easily divide shared bills and expenses among friends and family. Keep everyone accountable and your finances  in check.
+          Easily divide shared bills and expenses among friends and family. Keep
+          everyone accountable and your finances in check.
         </p>
       </div>
       <div className="px-7 md:px-0">
-        <Image src="/images/p1.avif" alt="" width={500} height={393} priority></Image>
+        <Image
+          src="/images/p1.avif"
+          alt=""
+          width={500}
+          height={393}
+          priority
+        ></Image>
       </div>
     </div>
   );
