@@ -1,9 +1,18 @@
+'use client'
+
 import Image from "next/image";
 import Link from "next/link";
+import {motion} from "framer-motion";
 
 export default function Download() {
   return (
-    <div className="md:px-7 lg:px-12">
+    <motion.div
+      initial={{ opacity: 1, y: -120 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 5 }}
+      id="download"
+      className="md:px-7 lg:px-12"
+    >
       <div className="max-w-[370px] md:max-w-[800px] lg:max-w-[1100px] w-full mx-auto bg-[black] rounded-[25px] md:flex justify-between items-center bg-[url('/images/d2.avif')] bg-cover bg-center md:my-[90px]">
         <div className="px-[30px] pt-[50px] md:pt-0 md:px-[50px] lg:px-[80px]">
           <p className="text-[white] text-[32px] md:text-[37px] lg:text-[46px] font-medium leading-14 text-center md:text-start">
@@ -38,6 +47,6 @@ export default function Download() {
           ></Image>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

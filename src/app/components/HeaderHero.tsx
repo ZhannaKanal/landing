@@ -31,10 +31,10 @@ export default function HeaderHero() {
               <Link href="">Home</Link>
             </div>
             <div>
-              <Link href="">FAQ</Link>
+              <Link href="#faq">FAQ</Link>
             </div>
             <div>
-              <Link href="">Blog</Link>
+              <Link href="#blog">Blog</Link>
             </div>
             <div className="rounded-[12px] font-medium bg-[white] hover:bg-[black] duration-500 text-[black] hover:text-[white] px-[20px] py-[8px]">
               <Link href="/">Get for Free</Link>
@@ -77,8 +77,8 @@ export default function HeaderHero() {
               </div>
               <div className=" flex flex-col items-center text-white py-6 gap-4 md:hidden z-50">
                 <Link href="">Home</Link>
-                <Link href="">FAQ</Link>
-                <Link href="">Blog</Link>
+                <Link href="#faq">FAQ</Link>
+                <Link href="#blog">Blog</Link>
                 <Link
                   href="/"
                   className="w-full text-center rounded-[12px] font-medium bg-[white] hover:bg-[black] duration-500 text-[black] hover:text-[white] py-[8px]"
@@ -122,7 +122,7 @@ export default function HeaderHero() {
           whileTap={{ scale: 0.95 }}
           className="max-w-[150px] w-full mx-auto bg-[#965CFF] hover:bg-[#6B33CC] duration-1000 rounded-[12px] py-[9px] px-[15px] mt-[15px]"
         >
-          <Link href="/">
+          <Link href="#download">
             <div className="flex justify-between ">
               <p>Get for Free</p>
               <Image src="/icons/i1.svg" alt="Arrow" width={25} height={10} priority/>
@@ -150,10 +150,10 @@ export default function HeaderHero() {
             </div>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0, y: 120 }}
+            whileInView={{ opacity: 1, y:0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.5 }}
             className="md:mx-auto"
           >
             <Image

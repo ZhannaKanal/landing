@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -26,13 +27,18 @@ export default function Footer() {
         alert("Failed to send email. Please try again.");
       }
     } catch (error) {
-      alert("An error occurred while sending email. "+ error);
+      alert("An error occurred while sending email. " + error);
     }
   };
 
   return (
     <div className="bg-[black] p-[100px]">
-      <div className="max-w-[1100px] w-full mx-auto">
+      <motion.div
+        initial={{ opacity: 0, y: -120 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 10 }}
+        className="max-w-[1100px] w-full mx-auto"
+      >
         <div className=" md:flex justify-between">
           <div className="bg-[] w-full md:w-1/2">
             <div className="">
@@ -45,9 +51,10 @@ export default function Footer() {
               </p>
             </div>
             <form
+              id="faq"
               className=" md:flex justify-start gap-3 py-7"
               onSubmit={(e) => {
-                e.preventDefault(); 
+                e.preventDefault();
                 handleSubscribe();
               }}
             >
@@ -86,7 +93,7 @@ export default function Footer() {
           <p className="text-[white]">Made by</p>
           <p className="text-[#985cff]">Code-Less.cc</p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
